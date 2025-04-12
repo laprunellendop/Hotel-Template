@@ -1,0 +1,116 @@
+#top{
+    width: 100%;
+    background-color: white;
+    font-size: 18px;
+}
+#top a{
+    text-decoration: none;
+    padding: 8px 16px;
+    color: black;
+    display: inline-block;
+    text-align: center;
+}
+#right{
+    float: right;
+    background-color: #f1f1f1; 
+}
+#logo{
+    background-color: red;
+    color:white;
+}
+header img{
+    max-width: 100%;
+    height:auto;
+    padding: 0 10px;
+}
+header{
+    margin-left: auto; margin-right: auto;
+}
+.content-room{
+    padding: 0 16px;
+}
+.col25{
+    width: 25%;
+    float: left;
+    padding: 0 8px;
+}
+.col16{
+    width: 16.6666%;
+    float: left;
+    padding: 0 8px;
+}
+input[type=text],input[type=number]{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 15px;
+}
+button{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 15px;
+    background-color: black;
+    color: white; 
+}
+.col33{
+    float: left;
+    padding: 0 8px;
+    width: 33.333%;
+}
+.col33 img{
+    vertical-align: middle;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.col66{
+    float: left;
+    padding: 0 8px;
+    width: 66.666%;
+}
+.col50{
+    float: left;
+    padding: 0 8px;
+    width: 50%;
+}
+
+.content-about::after,.col33::after,#about-info::after,#content-form-room::after,.hotel::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#about-warn{
+    background-color: red;
+    padding: 32px;
+}
+.content-offers{
+    background-color: black;
+    margin: 16px 0;
+    color: white;
+    opacity: 0.7;
+}
+.content-offers:hover{
+    opacity: 1;
+}
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 64px;
+}
+footer a{
+    color: white;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+    margin: 10px 0;
+
+}
