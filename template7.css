@@ -20,8 +20,8 @@
      
 }
 #logo{
-    background-color: red!important;
-    color:white;
+    background-color: #f44336!important;
+    color: white !important;;
     text-decoration: none;
     padding: 8px 16px;
     display: inline-block;
@@ -35,6 +35,39 @@
 header img{
     max-width: 100%;
     height:auto;
+}
+.absolute{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+.contenair-reservation{
+    background-color: #f44336;
+    color: white;
+    padding: 4px 16px;
+}
+.form-reservation{
+    padding: 16px 8px;
+}
+.form-reservation input[type=text],input[type=number],.content-offers input[type=text] {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 15px;
+    font: inherit; 
+}
+.form-reservation button{
+    border: none;
+    padding: 8px 16px;
+    font-size: 15px;
+    background-color: #616161;
+    color: white; 
+    font: inherit;
+    margin-left:8px;
+}
+.row{
+    padding-bottom: 24px;
 }
 .content{
     margin-left: auto; margin-right: auto;
@@ -101,7 +134,7 @@ header img{
 .col33 img{
     vertical-align: middle;
 }
-#content-form-room::after,#container-images-rooms::after,.content-about::after,#about-info::after,.hotel::after,.row-padding::after{
+#content-form-room::after,#container-images-rooms::after,.content-about::after,#about-info::after,.hotel::after,.row-padding::after,.form-reservation,.row::after{
     content: "";
     display: table;
     clear: both;
@@ -248,12 +281,10 @@ footer a:hover{
     }
     #top a,#right{
         display: block;
-        text-align: center;
-        
+        text-align: center;  
     }
     
 }
-
 body{
     background-color: #f1f1f1;
 }
