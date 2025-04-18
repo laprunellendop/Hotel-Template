@@ -10,66 +10,88 @@
 </head>
 <body>
     <div id="top">
-        <a href="#rooms" id="logo"><i class="fa-solid fa-bed"></i>Logo</a>
-        <a href="#rooms" >Rooms</a>
-        <a href="#about" >About</a>
-        <a href="#contact" >Contact</a>
+        <a href="#rooms" id="logo"><i class="fa-solid fa-bed" style="margin-right: 10px;"></i>Logo</a>
+        <a href="#rooms" class="a">Rooms</a>
+        <a href="#about"  class="a">About</a>
+        <a href="#contact"  class="a" >Contact</a>
         <a href="#contact" id="right">Book Now</a>
     </div>
-    <header style="max-width: 1600px;">
-        <img src="images/hotel.jpg" alt="" width="1600">
+    <header style="max-width: 1500px;" class="content">
+        <img src="images/hotel.jpg" alt="" width="1500">
     </header>
-    <div id="rooms" class="content-room" style="max-width: 1632px;">
+<div class="content" style="max-width: 1532px;">
+    <div id="rooms" class="content-room" > <!--rooms-->
+        <div class="padlr">
         <h3 style="font-size: 25px;">Rooms</h3>
-        <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+        <h5>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</h5>
+        </div>
         <div id="content-form-room">
             <div class="col25">
-                <label for=""><i class="fa-regular fa-calendar"></i>Check In</label>
+                 <label for=""><i class="fa-regular fa-calendar"></i> Check In</label>
                 <input type="text" placeholder="DD MM YYYY">
             </div>
             <div class="col25">
-                <label for=""><i class="fa-regular fa-calendar"></i>Check Out</label>
+                <label for=""><i class="fa-regular fa-calendar"></i> Check Out</label>
                 <input type="text" placeholder="DD MM YYYY">
             </div>
             <div class="col16">
-                <label for=""><i class="fa-solid fa-person"></i>Adults</label>
+                <label for=""><i class="fa-solid fa-person"></i> Adults</label>
                 <input type="number" placeholder="1">
             </div>
             <div class="col16">
-                <label for=""><i class="fa-solid fa-child-reaching"></i>kids</label>
+                <label for=""><i class="fa-solid fa-child-reaching"></i> kids</label>
                 <input type="number" placeholder="0">
             </div>
             <div class="col16">
-                <label for=""><i class="fa-solid fa-magnifying-glass"></i>Search</label>
+                <label for=""><i class="fa-solid fa-magnifying-glass"></i> Search</label>
                 <button>Search</button>
             </div>
         </div>
-        <div style="padding: 16px 0;">
+        <div id="container-images-rooms">
             <div class="col33">
                 <img src="images/room_single.jpg" alt="" style="width: 100%;">
-                <div style="background-color: white;">
-                    <h1>Single Room</h1>
+                <div class="info-room">
+                    <h2>Single Room</h2>
                     <p>From $99</p>
                     <p>Single bed</p>
                     <p>15m2</p>
+                    <div>
+                        <i class="fa-solid fa-bath"></i>
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
                 </div>
             </div>
             <div class="col33">
                 <img src="images/room_double.jpg" alt="" style="width: 100%;">
-                <div style="background-color: white;">
-                    <h1>Double Room</h1>
+                <div class="info-room">
+                    <h2>Double Room</h2>
                     <p>From $149</p>
                     <p>Queen-size bed</p>
                     <p>25m2</p>
+                    <div>
+                        <i class="fa-solid fa-bath"></i>
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-tv"></i>
+                    </div>
                 </div>
             </div>
             <div class="col33">
                 <img src="images/room_deluxe.jpg" alt="" style="width: 100%;">
-                <div style="background-color: white; padding:0">
-                    <h1>Deluxe Room</h1>
+                <div class="info-room">
+                    <h2>Deluxe Room</h2>
                     <p>From $199</p>
                     <p>King-size bed</p>
                     <p>40m2</p>
+                    <div>
+                        <i class="fa-solid fa-bath"></i>
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-tv"></i>
+                        <i class="fa-solid fa-martini-glass"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,64 +99,88 @@
     <div id="about">
         <div class="content-about">
             <div class="col33">
-                <h1>About</h1>
-                <p style="line-height: 1.5;">Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.We accept:</p>
+                <h2>About</h2>
+                <p style="line-height: 1.5;">Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p> <br><p> We accept:  <i class="fa-regular fa-credit-card" ></i> <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-amex"></i> <i class="fa-brands fa-cc-paypal"></i> </p>
             </div>
             <div class="col66">
                 <img src="images/map.jpg" alt="" style="width: 100%;filter:grayscale(0.7)">
             </div>
         </div>
         <div id="about-info">
-            <div class="col33">
-                <p> <i class="fa-solid fa-location-dot"></i>423 Some adr, Chicago, US</p>
+            <div class="col33 text-center">
+                <p> <i class="fa-solid fa-location-dot"></i> 423 Some adr, Chicago, US</p>
             </div>
-            <div class="col33">
-                <p><i class="fa-solid fa-phone"></i></i>Phone: +00 151515</p>
+            <div class="col33 text-center">
+                <p><i class="fa-solid fa-phone"></i></i> Phone: +00 151515</p>
             </div>
-            <div class="col33">
-                <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
+            <div class="col33 text-center">
+                <p><i class="fa-solid fa-envelope"></i> Email: mail@mail.com</p>
             </div>  
         </div>
         <div id="about-warn">
-            <p style="color: #ffffff;"> On demand, we can offer playstation, babycall, children care, dog equipment, etc.</p>
+            <p style="color: #ffffff;"> <i class="fa-solid fa-info"></i>On demand, we can offer playstation, babycall, children care, dog equipment, etc.</p>
         </div>
     </div>
     <div>
-        <h1>Our Hotels</h1>
-        <p>You can find our hotels anywhere in the world:</p>
+        <div class="container-hotel">
+            <h2>Our Hotels</h2>
+            <p>You can find our hotels anywhere in the world:</p>
+        </div>
         <div class="hotel">
-            <div class="col50">
-                <img src="images/cinqueterre.jpg" alt="" style="width: 100%;">
+            <div class="col50 bot">
+                <div class="relative">
+                    <img src="images/cinqueterre.jpg" alt="" style="width: 100%;">
+                    <span class="left">Cinque Terre</span>
+                </div>
             </div>
             <div class="col50">
-                <div class="col50">
-                    <img src="images/newyork2.jpg" alt="" style="width: 100%;">
+                <div class="row-padding">
+                    <div class="col50" style="margin-bottom: 16px;">
+                        <div class="relative">
+                            <img src="images/newyork2.jpg" alt="" style="width: 100%;">
+                            <span class="left">New York</span>
+                        </div>
+                    </div>
+                    <div class="col50" style="margin-bottom: 16px;">
+                        <div class="relative">
+                            <img src="images/sanfran.jpg" alt="" style="width: 100%;">
+                            <span class="left">San Francisco</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col50">
-                    <img src="images/sanfran.jpg" alt="" style="width: 100%;">
-                </div>
-                <div class="col50">
-                    <img src="images/pisa.jpg" alt="" style="width: 100%;">
-                </div>
-                <div class="col50">
-                    <img src="images/paris.jpg" alt=""style="width: 100%;">
+                <div class="row-padding">
+                    <div class="col50" style="margin-bottom: 16px;">
+                        <div class="relative">
+                            <img src="images/pisa.jpg" alt="" style="width: 100%;">
+                            <span class="left">Pisa</span>
+                        </div>
+                    </div>
+                    <div class="col50" style="margin-bottom: 16px;">
+                        <div class="relative">
+                            <img src="images/paris.jpg" alt=""style="width: 100%;">
+                            <span class="left">Paris</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="content-offers">
         <h1>Get the best offers first!</h1>
-        <p>Join our newsletter.</p>
-        <label for="">E-mail</label>
-        <input type="text" placeholder="your Email address">
-        <button>Subscribe</button>
+        <p style="font-size: 15px;">Join our newsletter.</p><br>
+        <label for="" style="font-size: 15px;">E-mail</label>
+        <input type="text" placeholder="Your Email address">
+        <button type="button">Subscribe</button>
     </div>
     <div id="contact">
         <h1>Contact</h1>
         <p>If you have any questions, do not hesitate to ask them.</p>
-        <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
-        <p><i class="fa-solid fa-phone"></i> Phone: +00 151515</p>
-        <p> <i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
+        <div class="container-contact">
+            <i class="fa-solid fa-location-dot"></i> Chicago, US <br>
+            <i class="fa-solid fa-phone"></i>Phone: +00 151515 <br>
+            <i class="fa-solid fa-envelope"></i>Email: mail@mail.com
+        </div>
         <form action="">
             <input type="text" placeholder="Name">
             <input type="text" placeholder="Email">
@@ -142,9 +188,19 @@
             <input type="submit" value="SEND MESSAGE">
         </form>
     </div>
+</div>
     <footer id="footer">
         <p>Find Us On</p>
-        <p>Powered by <a href="#">w3.css</a></p>
+        <div style="font-size:20px;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            
+        </div>
+        <p style="font-size: 15px;">Powered by <a href="#">w3.css</a></p>
     </footer>
 </body>
 </html>

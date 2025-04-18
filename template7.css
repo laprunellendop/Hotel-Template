@@ -10,48 +10,88 @@
     display: inline-block;
     text-align: center;
 }
+#top a:hover{
+    color: black;
+    background-color: #ccc;
+}
 #right{
     float: right;
-    background-color: #f1f1f1; 
+    background-color: #f1f1f1;
+     
 }
 #logo{
-    background-color: red;
+    background-color: red!important;
     color:white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    text-align: center;   
+}
+#logo:hover{
+    color: black!important;
+    background-color: #ccc!important;
+    
 }
 header img{
     max-width: 100%;
     height:auto;
-    padding: 0 10px;
 }
-header{
+.content{
     margin-left: auto; margin-right: auto;
 }
+/*ROOMS*/
 .content-room{
+   padding: 16px 0;
+}
+.padlr{
     padding: 0 16px;
 }
-.col25{
-    width: 25%;
-    float: left;
+#content-form-room{
     padding: 0 8px;
 }
-.col16{
-    width: 16.6666%;
-    float: left;
-    padding: 0 8px;
-}
-input[type=text],input[type=number]{
+#content-form-room input[type=text],input[type=number],.content-offers input[type=text] {
     width: 100%;
     border: 1px solid #ccc;
     padding: 8px;
     font-size: 15px;
+    font: inherit;
 }
-button{
+#content-form-room button{
     width: 100%;
     border: 1px solid #ccc;
     padding: 8px;
     font-size: 15px;
     background-color: black;
     color: white; 
+    font: inherit;
+}
+#container-images-rooms{
+    padding: 16px 8px;
+}
+.info-room{
+    background-color: white;
+    padding: 16px;
+}
+.info-room p,h2{
+    padding-bottom: 16px;
+}
+/*FLOAT*/
+.col66{
+    float: left;
+    padding: 0 8px;
+    width: 66.666%;
+}
+.col25{
+    width: 25%;
+    float: left;
+    padding: 0 8px;
+
+}
+.col16{
+    width: 16.6666%;
+    float: left;
+    padding: 0 8px;
+   
 }
 .col33{
     float: left;
@@ -61,48 +101,157 @@ button{
 .col33 img{
     vertical-align: middle;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.col66{
-    float: left;
-    padding: 0 8px;
-    width: 66.666%;
-}
-.col50{
-    float: left;
-    padding: 0 8px;
-    width: 50%;
-}
-
-.content-about::after,.col33::after,#about-info::after,#content-form-room::after,.hotel::after{
+#content-form-room::after,#container-images-rooms::after,.content-about::after,#about-info::after,.hotel::after,.row-padding::after{
     content: "";
     display: table;
     clear: both;
 }
-#about-warn{
-    background-color: red;
+/*ABOUT*/
+.content-about{
+    padding: 0 8px;
+}
+.content-about i{
+    font-size: 20px;
+}
+#about-info{
     padding: 32px;
 }
+#about-info p{
+    font-size: 18px;
+    text-align: center;
+}
+#about-info i{
+    color:#f44336;
+}
+#about-warn{
+    background-color: #f44336 ;
+    padding: 40px 12px;
+    border-left: 4px solid #ccc;
+}
+#about-warn i{
+    background-color: #ff5722  ;
+   padding: 12px;
+   margin-right: 16px;
+}
+/*HOTEL*/
+.container-hotel{
+    padding: 24px 16px ;
+}
+.col50{
+    float: left;
+    padding:0 8px;
+    width: 50%;
+}
+.hotel{
+    padding: 0 8px;
+}
+.row-padding{
+    margin: 0 -16px; padding: 0 8px;
+}
+.relative{
+    position: relative;
+}
+.left{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    padding: 16px;
+}
+
+/*CONTENT_OFFERS*/
 .content-offers{
     background-color: black;
-    margin: 16px 0;
+    padding: 32px 16px;
     color: white;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 .content-offers:hover{
     opacity: 1;
 }
+.content-offers button{
+    border: none;
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white; 
+    display: inline-block;
+    margin-top: 16px;
+    font: inherit;
+}
+.content-offers button:hover{
+    background-color: #ccc;
+    color: black;  
+}
+/*CONTACT*/
+#contact{
+    padding: 32px 16px;
+}
+.container-contact{
+    font-size: 14px;
+    padding: 10px 0;
+}
+#contact i{
+    color:#f44336;
+    padding: 4px 0; 
+    margin-right: 16px;
+}
+#contact input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 18px 8px;
+    font-size: 15px;
+    margin: 8px 0;
+    font: inherit;
+}
+#contact input[type=submit]{
+    background-color: black;
+    color: white;
+    padding: 16px 21px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    font: inherit;
+    
+}
+#contact input[type=submit]:hover{
+    
+    background-color: #ccc;
+    color: black;   
+}
+
+/*FOOTER*/
 #footer{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 64px;
+    padding: 16px;
 }
+footer p{
+    font-size: 18px;
+    padding: 32px 0;
+ }
 footer a{
     color: white;
+}
+footer a:hover{
+    color:green;
+}
+@media only screen and (max-width:600px){
+    .col25,.col16,.col66,.col50{
+        width: 100%; 
+    }
+    .col33{
+        width: 100%; padding-bottom: 16px;
+    }
+    .bot{
+        width: 100%; padding-bottom: 16px;
+    }
+    #top a,#right{
+        display: block;
+        text-align: center;
+        
+    }
+    
 }
 
 body{
@@ -113,4 +262,9 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 400;
     margin: 10px 0;
 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
