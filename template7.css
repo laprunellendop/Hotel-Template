@@ -42,6 +42,7 @@ header img{
     top: 50%;
     transform: translate(0%,-50%);
 }
+
 .contenair-reservation{
     background-color: #f44336;
     color: white;
@@ -49,13 +50,15 @@ header img{
 }
 .form-reservation{
     padding: 16px 8px;
+    background-color: #ffffff; 
 }
-.form-reservation input[type=text],input[type=number],.content-offers input[type=text] {
+.form-reservation input[type=text],input[type=number] {
     width: 100%;
     border: 1px solid #ccc;
     padding: 8px;
     font-size: 15px;
     font: inherit; 
+    
 }
 .form-reservation button{
     border: none;
@@ -134,7 +137,7 @@ header img{
 .col33 img{
     vertical-align: middle;
 }
-#content-form-room::after,#container-images-rooms::after,.content-about::after,#about-info::after,.hotel::after,.row-padding::after,.form-reservation,.row::after{
+#content-form-room::after,#container-images-rooms::after,.content-about::after,#about-info::after,.hotel::after,.row-padding::after,.row::after,.width::after{
     content: "";
     display: table;
     clear: both;
@@ -282,9 +285,19 @@ footer a:hover{
     #top a,#right{
         display: block;
         text-align: center;  
-    }
-    
+    }  
 }
+@media only screen and (min-width:601px){
+    .width{
+        width: 66.66%;
+    }
+}
+@media only screen and (min-width:992px){
+    .width{
+        width: 50%;
+    }
+}
+
 body{
     background-color: #f1f1f1;
 }
